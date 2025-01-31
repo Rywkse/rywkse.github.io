@@ -4,57 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News Page</title>
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/news.css">
 </head>
 <body>
-    <header>
-        <h1>Latest News</h1>
-        <nav>
-            <ul class="nav-list">
-                <li class="nav-list-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-link" href="/about.html">About</a>
-                </li>
-                <li class="nav-list-item">
-                    <a class="nav-link" href="/contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <div class="social-post">
-            <h2 class="post-title">#Egypt</h2>
-            <h2 class="user-name">@yousseframzy</h2>
-            <h3 class="posted-data">21/1/2025</h3>
-            <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, doloremque?</p>
-        </div>
-        <div class="social-post">
-            <h2 class="post-title">#US</h2>
-            <h2 class="user-name">@abdoallah</h2>
-            <h3 class="posted-data">1/1/2025</h3>
-            <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, tenetur.</p>
-        </div>
-        <div class="social-post">
-            <h2 class="post-title">#UEA</h2>
-            <h2 class="user-name">@ahmedbassem</h2>
-            <h3 class="posted-data">27/2/2025</h3>
-            <p class="post-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, dicta?</p>
-        </div>
-        <div class="social-post">
-            <h2 class="post-title">#Garmen</h2>
-            <h2 class="user-name">@mohammedramzy>
-            <h3 class="posted-data">27/4/2025</h3>
-            <p class="post-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae, quidem?</p>
-        </div>
-        <div class="social-post">
-            <h2 class="post-title">#Moroco</h2>
-            <h2 class="user-name">@bassemramzy</h2>
-            <h3 class="posted-data">2/1/2025</h3>
-            <p class="post-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, repellendus.</p>
-        </div>
-    </main>
+    <div class="page">
+        <header class="brand-header">
+            <h1 class="brand">The News Times</h1>
+        </header>
+
+        <ul class="nav-links">
+            <li class="site-section">
+                <a href="/index.html" class="section-link">Home</a>
+            </li>
+            <li class="site-section">
+                <a href="/about.html" class="section-link">About Us</a>
+            </li>
+            <li class="site-section">
+                <a href="/contact.html" class="section-link">Contact Me</a>
+            </li>
+        </ul>
+
+        <article class="story story-1">
+            <h2 class="article-title">Global Tech Summit 2023: Innovations in AI and Quantum Computing</h2>
+            <p class="article-text">
+                The Global Tech Summit 2023, held in San Francisco, brought together leading experts in artificial intelligence and quantum computing. Keynote speakers highlighted breakthroughs in AI ethics and the potential of quantum computing to revolutionize industries. Companies like Google, IBM, and Microsoft showcased their latest advancements, emphasizing the importance of collaboration in driving technological progress.
+            </p>
+            <p class="article-text">
+                One of the standout presentations was by Dr. Jane Smith, who discussed the ethical implications of AI in healthcare. She emphasized the need for transparent algorithms and robust regulatory frameworks to ensure that AI technologies benefit all of humanity. The summit concluded with a call to action for governments and private sectors to invest in research and development to tackle global challenges.
+            </p>
+        </article>
+
+        <article class="story story-2">
+            <h2 class="article-title">Historic Climate Agreement Reached at COP28</h2>
+            <img
+                class="article-img"
+                src="data:image/png;base64,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"
+                alt="COP28 Climate Summit"
+            />
+            <p class="article-text">
+                Delegates from over 200 countries reached a historic agreement at the COP28 climate summit in Dubai. The agreement includes ambitious targets for reducing greenhouse gas emissions and transitioning to renewable energy sources. A landmark decision was the establishment of a global fund to support developing nations in their efforts to combat climate change.
+            </p>
+            <p class="article-text">
+                UN Secretary-General Antonio Guterres praised the agreement, calling it a "turning point in the fight against climate change." However, some environmental groups criticized the deal for not going far enough, urging for more immediate and drastic actions to prevent catastrophic global warming.
+            </p>
+        </article>
+
+        <article class="story story-3">
+            <h2 class="article-title">NASA's Artemis II Mission: Preparing for a Return to the Moon</h2>
+            <p class="article-text">
+                NASA has announced the crew for the Artemis II mission, marking the next step in the agency's plan to return humans to the Moon. The mission, scheduled for 2024, will carry four astronauts on a journey around the Moon, testing the systems needed for future lunar landings. This mission is a precursor to Artemis III, which aims to land the first woman and the next man on the lunar surface by 2025.
+            </p>
+            <p class="article-text">
+                The Artemis program represents a significant milestone in space exploration, with the ultimate goal of establishing a sustainable human presence on the Moon. NASA Administrator Bill Nelson emphasized the importance of international collaboration, with partners including the European Space Agency (ESA) and the Canadian Space Agency (CSA) contributing to the mission's success.
+            </p>
+        </article>
+
+        <article class="story story-4">
+            <h2 class="article-title">Economic Recovery: Global Markets Show Signs of Stabilization</h2>
+            <p class="article-text">
+                Global markets have shown signs of stabilization as economies recover from the impacts of the COVID-19 pandemic. The International Monetary Fund (IMF) reports that global GDP growth is expected to reach 3.5% in 2023, driven by strong performances in the United States, China, and the European Union. However, challenges remain, including inflationary pressures and supply chain disruptions.
+            </p>
+            <p class="article-text">
+                Central banks around the world are cautiously optimistic, with many beginning to taper pandemic-era stimulus measures. Economists warn that the recovery is uneven, with developing nations facing significant hurdles. The IMF has called for increased international cooperation to ensure a balanced and inclusive global economic recovery.
+            </p>
+        </article>
+
+        <article class="story story-5 double-story">
+            <h2 class="article-title">Breakthrough in Renewable Energy: Solar Power Efficiency Hits Record High</h2>
+            <p class="article-text">
+                Researchers at the National Renewable Energy Laboratory (NREL) have achieved a record-breaking efficiency rate for solar panels, reaching 47.1% under concentrated sunlight. This breakthrough, achieved using advanced multi-junction solar cells, represents a significant step forward in the quest for more efficient and affordable renewable energy sources.
+            </p>
+            <p class="article-text">
+                The new technology has the potential to revolutionize the solar energy industry, making it more competitive with traditional fossil fuels. Dr. John Doe, lead researcher on the project, stated, "This is a game-changer for the renewable energy sector. With further development, we can significantly reduce the cost of solar power and accelerate the transition to a clean energy future."
+            </p>
+            <p class="article-text">
+                The implications of this breakthrough extend beyond just energy production. Increased solar efficiency could lead to more widespread adoption of renewable energy in developing countries, where access to reliable and affordable energy is a critical issue. The NREL team is now working on scaling up the technology for commercial use, with the aim of making it available to the market within the next five years.
+            </p>
+        </article>
+    </div>
     <footer>
         <p>&copy; 2025 Ramzy</p>
     </footer>
