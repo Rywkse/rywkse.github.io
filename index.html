@@ -3,33 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Youssef Ramzy</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Ramzy - Dev Portfolio</title>
 </head>
 <body>
     <header>
-        <h1>Welcome to my website</h1>
-            <nav>
-                <ul class="nav-list">
-                    <li class="nav-list-item">
-                        <a class="nav-link" href="/news.html">Newsfeed</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="/restaurant_menu.html">Pizza Slice</a>
-                    </li>
-                    <li>
-                        <a class="nav-link" href="/coffee_market.html">Rywkse Coffe</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a class="nav-link" href="/about.html">About</a>
-                    </li>
-                    <li class="nav-list-item">
-                        <a class="nav-link" href="/contact.html">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+        <nav class="nav-lists">
+            <ul class="nav-items">
+                <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="#my-projects">My Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+        <div class="container">
+            <section class="about-me" id="about-me">
+                <h1>About Me</h1>
+                <p>My name is Ramzy, I am a web developer. I am passionate about web development and I am always looking for new challenges. I am a fast learner and I am always looking for new ways to improve my skills.</p>
+            </section>
+            <section class="my-projects" id="my-projects">
+                <h1>My Projects</h1>
+                <div class="project">
+                    <h2>Pizza Project</h2>
+                    <p>This is my first project. I built it using HTML and CSS.</p>
+                    <img height="500px" width="500px" src="https://yousseframzy.me/image/pizza%20logo.webp" alt="Project 1" />
+                    <br>
+                    <a href="restaurant_menu.html">View Project</a>
+                </div>
+                <div class="project">
+                    <h2>Coffee Project</h2>
+                    <p>This is my second project. I built it using HTML and CSS.</p>
+                    <img height="500px" width="500px" src="image/coffee.jfif" alt="Project 2" />
+                    <a href="checkout.html">View Project</a>
+                </div>
+                <div class="project">
+                    <h2>News Project</h2>
+                    <p>This is my second project. I built it using HTML and CSS.</p>
+                    <img height="500px" width="500px" src="image/news.png" alt="Project 2" />
+                    <a href="news.html">View Project</a>
+                </div>
+            </section>
+            <section class="contacts" id="contacts">
+                <h1>Contacts</h1>
+                <p>You can reach me via email or connect with me on social media:</p>
+                <div class="social-links">
+                    <a href="mailto:yousseframzybusiness@gmail.com"><img src="image/email.png"></a>
+                    <a href="https://www.linkedin.com/in/youssef-ramzy0/" target="_blank"><img src="image/linkedin.png" alt="LinkedIn" /></a>
+                    <a href="https://github.com/Rywkse" target="_blank"><img src="image/github.png" alt="GitHub" /></a>
+                    <a href="https://x.com/Youssef66763300" target="_blank"><img src="image/x.png" alt="X" /></a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Ramzy</p>
+    </footer>
 </body>
 </html>
